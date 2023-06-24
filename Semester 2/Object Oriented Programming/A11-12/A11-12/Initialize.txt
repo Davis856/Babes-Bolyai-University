@@ -1,0 +1,5 @@
+1,Blue,50,40,https://google.ro
+2,Purple,100,20,https://google.ro
+3,Black,30,30,https://google.ro
+4,Yellow,90,60,https://google.ro
+10,Green,20,80,https://google.ro

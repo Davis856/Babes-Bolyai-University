@@ -1,0 +1,20 @@
+even_list(l1...ln) = {
+	true, n=0
+	false, n=1
+	even_list(l3...ln), otherwise
+}
+
+min_numbers(a, b) = {
+	a, a<=b
+	b, a > b
+}
+
+minim_list(l1...ln) = {
+	l1, n=1
+	min_numbers(l1, minim_list(l2...ln)), otherwise
+}
+
+delete_first_occurence(l1...ln, m) = {
+	l2...ln, l1 = m
+	l1 + delete_first_occurence(l2...ln, m), otherwise
+}

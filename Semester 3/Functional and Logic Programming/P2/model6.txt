@@ -1,0 +1,37 @@
+my_append(l1...ln, e) = {
+	[e], n=0
+	l1 + my_append(l2...ln), otherwise
+}
+
+inv_list(l1...ln) = {
+	[], n=0
+	my_append(inv_list(l2...ln), l1), otherwise
+}
+
+product(l1...ln, e, c) = {
+	[c], n=0
+	((l1*e + c) % 10) + product(l2...ln, e, ((l1*e + c)/10)), otherwise
+}
+
+maxim_number(a, b) = {
+	a, a >= b
+	b, a < b
+}
+
+maxim_list(l1...ln) = {
+	l1, n=1
+	maxim_number(l1,maxim_list(l2...n))
+}
+
+replace_pos(l1...ln, e, pos) = {
+	[], n=0
+	pos + replace_pos(l2...ln, e, pos+1), l1 = e
+	replace_pos(l2...ln, e, pos+1), l1!=e
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	replace_pos(l1, maxim_list(l1), 1) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}
+

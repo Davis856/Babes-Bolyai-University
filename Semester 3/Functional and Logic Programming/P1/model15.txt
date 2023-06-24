@@ -1,0 +1,16 @@
+remove_occurences(l1...ln, e) = {
+	[], n=0
+	l1 + remove_occurence(l2...ln, e), l1=e
+	remove_occurence(l2...ln, e), l1!=e
+}
+
+list_to_set(l1...ln) = {
+	[], n=0
+	l1 + list_to_set(remove_occurences(l2...ln, l1)), otherwise
+}
+
+decompose(l1...ln) = {
+	[0, 0, [], []], n=0
+	{decompose(l2...ln), 1 + nr_even, l1 + even_list}, l1 % 2 = 0
+	{decompose(l2...ln), 1 + nr_odd, l1 + odd_list}, l1 % 2 = 1
+}

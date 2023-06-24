@@ -1,0 +1,18 @@
+nrPrim(n, div) = {
+	true, n <= 3
+	true, n%div!=0 and div >= n/2
+	nrPrim(n, div+2), n%div!=0 and div<n/2
+	false, otherwise
+}
+
+primeTwice(l1...ln) = {
+	[], n=0
+	l1 + l1 + primeTwice(l2...ln) nrPrim(l1, 3) = True,
+	l1 + primeTwice(l2...ln), otherwise
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	primeTwice(l1) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}

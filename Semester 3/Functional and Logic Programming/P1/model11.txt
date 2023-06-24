@@ -1,0 +1,11 @@
+substitute_elem(l1...ln, e1, e2) = {
+	[], n=0
+	e2 + substitute_elem(l2...ln, e1, e2), l1=e1
+	l1 + substitute_elem(l2...ln, e1, e2), l1 != e1
+}
+
+sublist(l1...lk, m, n, pos) = {
+	[], pos > n
+	l1 + sublist(l2...lk, m, n, pos + 1), m < pos and pos < m
+	sublist(l2...lk, m, n, pos+1), otherwise
+}

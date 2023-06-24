@@ -1,0 +1,290 @@
+\hypertarget{class_repository}{}\doxysection{Repository Class Reference}
+\label{class_repository}\index{Repository@{Repository}}
+
+
+{\ttfamily \#include $<$Repository.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_repository_a908475219d0aaa07501e0fc62ab25ef9}{Repository}} (const std\+::string \&filename)
+\item 
+void \mbox{\hyperlink{class_repository_aa14b72c76601ce059447edc519cd5950}{add\+Coat}} (const \mbox{\hyperlink{class_coat}{Coat}} \&coat)
+\begin{DoxyCompactList}\small\item\em Adds a new coat to the repository \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_a792989df4849a33f387e1d1d49a1b603}{remove\+Coat}} (int position)
+\begin{DoxyCompactList}\small\item\em Removes a coat from the repo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_a2d6fbd8f84500adf2a22286fe38764be}{update\+Size}} (int position, int new\+Size)
+\begin{DoxyCompactList}\small\item\em Update the title of a coat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_afe5d2d60ed0994db7c45d5a323226b55}{update\+Colour}} (int position, std\+::string new\+Colour)
+\begin{DoxyCompactList}\small\item\em Update the genre of a coat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_a6d2ce54c0d4fa0c69053f6fe7bd7368e}{update\+Price}} (int position, int new\+Price)
+\begin{DoxyCompactList}\small\item\em Update the year the coat has been released \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_a80d5251e0c2b9628e418ec7bfe6bf84c}{update\+Quantity}} (int position, int new\+Quantity)
+\begin{DoxyCompactList}\small\item\em Update the number of likes of a coat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_repository_acc07ffafbee2dbae2f653046f3984a5c}{update\+Photograph}} (int position, std\+::string new\+Photograph)
+\begin{DoxyCompactList}\small\item\em Update the trailer of a coat \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_repository_a1ded08b479e7f869d2b557ab70167264}{Find\+Elem\+By\+Size}} (int size) const
+\begin{DoxyCompactList}\small\item\em Find the position of the element which we want to search for \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_repository_afbc6c545c6c0dfa38c807c80d6f413a9}{get\+Size}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_coat}{Coat}} $>$ \mbox{\hyperlink{class_repository_a7aec2f55255943c21fc341170aef327c}{get\+Array}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_repository_a908475219d0aaa07501e0fc62ab25ef9}\label{class_repository_a908475219d0aaa07501e0fc62ab25ef9}} 
+\index{Repository@{Repository}!Repository@{Repository}}
+\index{Repository@{Repository}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{Repository()}{Repository()}}
+{\footnotesize\ttfamily Repository\+::\+Repository (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_repository_aa14b72c76601ce059447edc519cd5950}\label{class_repository_aa14b72c76601ce059447edc519cd5950}} 
+\index{Repository@{Repository}!addCoat@{addCoat}}
+\index{addCoat@{addCoat}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{addCoat()}{addCoat()}}
+{\footnotesize\ttfamily void Repository\+::add\+Coat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coat}{Coat}} \&}]{coat }\end{DoxyParamCaption})}
+
+
+
+Adds a new coat to the repository 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coat} & The coat to be added\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_aa14b72c76601ce059447edc519cd5950_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_aa14b72c76601ce059447edc519cd5950_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a1ded08b479e7f869d2b557ab70167264}\label{class_repository_a1ded08b479e7f869d2b557ab70167264}} 
+\index{Repository@{Repository}!FindElemBySize@{FindElemBySize}}
+\index{FindElemBySize@{FindElemBySize}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{FindElemBySize()}{FindElemBySize()}}
+{\footnotesize\ttfamily int Repository\+::\+Find\+Elem\+By\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption}) const}
+
+
+
+Find the position of the element which we want to search for 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position of the coat
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a1ded08b479e7f869d2b557ab70167264_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a1ded08b479e7f869d2b557ab70167264_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a7aec2f55255943c21fc341170aef327c}\label{class_repository_a7aec2f55255943c21fc341170aef327c}} 
+\index{Repository@{Repository}!getArray@{getArray}}
+\index{getArray@{getArray}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{getArray()}{getArray()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_coat}{Coat}} $>$ Repository\+::get\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a7aec2f55255943c21fc341170aef327c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_afbc6c545c6c0dfa38c807c80d6f413a9}\label{class_repository_afbc6c545c6c0dfa38c807c80d6f413a9}} 
+\index{Repository@{Repository}!getSize@{getSize}}
+\index{getSize@{getSize}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Repository\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_afbc6c545c6c0dfa38c807c80d6f413a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a792989df4849a33f387e1d1d49a1b603}\label{class_repository_a792989df4849a33f387e1d1d49a1b603}} 
+\index{Repository@{Repository}!removeCoat@{removeCoat}}
+\index{removeCoat@{removeCoat}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{removeCoat()}{removeCoat()}}
+{\footnotesize\ttfamily void Repository\+::remove\+Coat (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Removes a coat from the repo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the element to be removed\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a792989df4849a33f387e1d1d49a1b603_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_afe5d2d60ed0994db7c45d5a323226b55}\label{class_repository_afe5d2d60ed0994db7c45d5a323226b55}} 
+\index{Repository@{Repository}!updateColour@{updateColour}}
+\index{updateColour@{updateColour}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{updateColour()}{updateColour()}}
+{\footnotesize\ttfamily void Repository\+::update\+Colour (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{std\+::string}]{new\+Colour }\end{DoxyParamCaption})}
+
+
+
+Update the genre of a coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the coat to be changed\\
+\hline
+{\em new\+Colour} & The new colour to be given to the coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_afe5d2d60ed0994db7c45d5a323226b55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_acc07ffafbee2dbae2f653046f3984a5c}\label{class_repository_acc07ffafbee2dbae2f653046f3984a5c}} 
+\index{Repository@{Repository}!updatePhotograph@{updatePhotograph}}
+\index{updatePhotograph@{updatePhotograph}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{updatePhotograph()}{updatePhotograph()}}
+{\footnotesize\ttfamily void Repository\+::update\+Photograph (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{std\+::string}]{new\+Photograph }\end{DoxyParamCaption})}
+
+
+
+Update the trailer of a coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the coat to be updated\\
+\hline
+{\em new\+Photograph} & THe new photograph to be given to a certain coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_acc07ffafbee2dbae2f653046f3984a5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a6d2ce54c0d4fa0c69053f6fe7bd7368e}\label{class_repository_a6d2ce54c0d4fa0c69053f6fe7bd7368e}} 
+\index{Repository@{Repository}!updatePrice@{updatePrice}}
+\index{updatePrice@{updatePrice}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{updatePrice()}{updatePrice()}}
+{\footnotesize\ttfamily void Repository\+::update\+Price (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{new\+Price }\end{DoxyParamCaption})}
+
+
+
+Update the year the coat has been released 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the coat to be updated\\
+\hline
+{\em new\+Price} & The new price to be given to the coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a6d2ce54c0d4fa0c69053f6fe7bd7368e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a80d5251e0c2b9628e418ec7bfe6bf84c}\label{class_repository_a80d5251e0c2b9628e418ec7bfe6bf84c}} 
+\index{Repository@{Repository}!updateQuantity@{updateQuantity}}
+\index{updateQuantity@{updateQuantity}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{updateQuantity()}{updateQuantity()}}
+{\footnotesize\ttfamily void Repository\+::update\+Quantity (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Update the number of likes of a coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The postition of the coat to be updated\\
+\hline
+{\em new\+Quantity} & The new quantity to be given the coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a80d5251e0c2b9628e418ec7bfe6bf84c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_repository_a2d6fbd8f84500adf2a22286fe38764be}\label{class_repository_a2d6fbd8f84500adf2a22286fe38764be}} 
+\index{Repository@{Repository}!updateSize@{updateSize}}
+\index{updateSize@{updateSize}!Repository@{Repository}}
+\doxysubsubsection{\texorpdfstring{updateSize()}{updateSize()}}
+{\footnotesize\ttfamily void Repository\+::update\+Size (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Update the title of a coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the coat to be changed\\
+\hline
+{\em new\+Size} & The new size to be given to the coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_repository_a2d6fbd8f84500adf2a22286fe38764be_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_repository_8h}{Repository.\+h}}\item 
+\mbox{\hyperlink{_repository_8cpp}{Repository.\+cpp}}\end{DoxyCompactItemize}

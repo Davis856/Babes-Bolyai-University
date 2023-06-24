@@ -1,0 +1,16 @@
+insert(l1...ln, list) ={
+	list, n=0
+	l1 + insert(l2...ln, list), otherwise
+}
+
+substitute_elem(l1...ln, e, list) = {
+	[], n=0
+	substitute_elem(insert(list, l2...ln), e, list), l1=e
+	l1 + substitute_elem(l2...ln, e, list), l1!=e
+}
+
+remove_n(l1...ln, k) = {
+	[], n=0
+	l2...ln, k = 1
+	l1 + remove_n(l2..ln, k-1), otherwise
+}	

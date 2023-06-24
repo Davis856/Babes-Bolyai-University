@@ -1,0 +1,338 @@
+\hypertarget{class_admin_service}{}\doxysection{Admin\+Service Class Reference}
+\label{class_admin_service}\index{AdminService@{AdminService}}
+
+
+{\ttfamily \#include $<$Admin\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_service_a6508825ff2173fa6daf26801f7264861}{Admin\+Service}} (\mbox{\hyperlink{class_repository}{Repository}} \&repo)
+\begin{DoxyCompactList}\small\item\em Constructor for the admin service \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_a42c20725a003a3f85011dc02c37c9804}{add\+Coat}} (int size, std\+::string colour, int price, int quantity, std\+::string photograph)
+\begin{DoxyCompactList}\small\item\em Adds a new coat to the repository \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_aa58fdce2464b0d7899588ed749c822af}{remove\+Coat}} (int size)
+\begin{DoxyCompactList}\small\item\em Remove a certain coat from the repository \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_a0e58865293935048893b2ffc38dbfaea}{update\+Coat\+Size}} (int size, int new\+Size)
+\begin{DoxyCompactList}\small\item\em Updates the title of a coat from the repository \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_ad2b7b0d5e78e73111a31385a1ca9258c}{update\+Coat\+Colour}} (int size, std\+::string new\+Colour)
+\begin{DoxyCompactList}\small\item\em Updates the genre of a coat from the repo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_a0edf8bbbcc09fa1e77b885634cc8b8d4}{update\+Coat\+Price}} (int size, int new\+Price)
+\begin{DoxyCompactList}\small\item\em Updates the year a coat has been released \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_ad07405840b2f95c3e75f2dfd27564129}{update\+Coat\+Quantity}} (int size, int new\+Quantity)
+\begin{DoxyCompactList}\small\item\em Updates the number of likes a coat has been given \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_ad4e918d46345d4eb3c4925d08bca6fbf}{update\+Coat\+Photograph}} (int size, std\+::string new\+Photograph)
+\begin{DoxyCompactList}\small\item\em Update the photograph associated to a given coat \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_repository}{Repository}} \mbox{\hyperlink{class_admin_service_ac82559b5e247a0fb2a5da20d4d281bff}{get\+Repo}} () const
+\begin{DoxyCompactList}\small\item\em Prints the content of the repo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_service_a1a4f38d61dfdf1c18cd89887f2ea6d77}{Initialize\+Repo}} ()
+\begin{DoxyCompactList}\small\item\em Adds 10 entries to the repo \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_admin_service_a6508825ff2173fa6daf26801f7264861}\label{class_admin_service_a6508825ff2173fa6daf26801f7264861}} 
+\index{AdminService@{AdminService}!AdminService@{AdminService}}
+\index{AdminService@{AdminService}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{AdminService()}{AdminService()}}
+{\footnotesize\ttfamily Admin\+Service\+::\+Admin\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_repository}{Repository}} \&}]{repo }\end{DoxyParamCaption})}
+
+
+
+Constructor for the admin service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo} & The repository on which the class service operates\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_service_a42c20725a003a3f85011dc02c37c9804}\label{class_admin_service_a42c20725a003a3f85011dc02c37c9804}} 
+\index{AdminService@{AdminService}!addCoat@{addCoat}}
+\index{addCoat@{addCoat}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{addCoat()}{addCoat()}}
+{\footnotesize\ttfamily void Admin\+Service\+::add\+Coat (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{std\+::string}]{colour,  }\item[{int}]{price,  }\item[{int}]{quantity,  }\item[{std\+::string}]{photograph }\end{DoxyParamCaption})}
+
+
+
+Adds a new coat to the repository 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat\\
+\hline
+{\em colour} & The colour of the coat\\
+\hline
+{\em price} & The price of the coat\\
+\hline
+{\em quantity} & The quantity for the coat\\
+\hline
+{\em photograph} & The photograph of the coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a42c20725a003a3f85011dc02c37c9804_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a42c20725a003a3f85011dc02c37c9804_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_ac82559b5e247a0fb2a5da20d4d281bff}\label{class_admin_service_ac82559b5e247a0fb2a5da20d4d281bff}} 
+\index{AdminService@{AdminService}!getRepo@{getRepo}}
+\index{getRepo@{getRepo}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{getRepo()}{getRepo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_repository}{Repository}} Admin\+Service\+::get\+Repo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints the content of the repo 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ac82559b5e247a0fb2a5da20d4d281bff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_a1a4f38d61dfdf1c18cd89887f2ea6d77}\label{class_admin_service_a1a4f38d61dfdf1c18cd89887f2ea6d77}} 
+\index{AdminService@{AdminService}!InitializeRepo@{InitializeRepo}}
+\index{InitializeRepo@{InitializeRepo}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{InitializeRepo()}{InitializeRepo()}}
+{\footnotesize\ttfamily void Admin\+Service\+::\+Initialize\+Repo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds 10 entries to the repo 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a1a4f38d61dfdf1c18cd89887f2ea6d77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_admin_service_a1a4f38d61dfdf1c18cd89887f2ea6d77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_aa58fdce2464b0d7899588ed749c822af}\label{class_admin_service_aa58fdce2464b0d7899588ed749c822af}} 
+\index{AdminService@{AdminService}!removeCoat@{removeCoat}}
+\index{removeCoat@{removeCoat}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{removeCoat()}{removeCoat()}}
+{\footnotesize\ttfamily void Admin\+Service\+::remove\+Coat (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Remove a certain coat from the repository 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be removed\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_aa58fdce2464b0d7899588ed749c822af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_aa58fdce2464b0d7899588ed749c822af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_ad2b7b0d5e78e73111a31385a1ca9258c}\label{class_admin_service_ad2b7b0d5e78e73111a31385a1ca9258c}} 
+\index{AdminService@{AdminService}!updateCoatColour@{updateCoatColour}}
+\index{updateCoatColour@{updateCoatColour}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{updateCoatColour()}{updateCoatColour()}}
+{\footnotesize\ttfamily void Admin\+Service\+::update\+Coat\+Colour (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{std\+::string}]{new\+Colour }\end{DoxyParamCaption})}
+
+
+
+Updates the genre of a coat from the repo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to update\\
+\hline
+{\em new\+Colour} & The new genre to be given to a coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad2b7b0d5e78e73111a31385a1ca9258c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad2b7b0d5e78e73111a31385a1ca9258c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_ad4e918d46345d4eb3c4925d08bca6fbf}\label{class_admin_service_ad4e918d46345d4eb3c4925d08bca6fbf}} 
+\index{AdminService@{AdminService}!updateCoatPhotograph@{updateCoatPhotograph}}
+\index{updateCoatPhotograph@{updateCoatPhotograph}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{updateCoatPhotograph()}{updateCoatPhotograph()}}
+{\footnotesize\ttfamily void Admin\+Service\+::update\+Coat\+Photograph (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{std\+::string}]{new\+Photograph }\end{DoxyParamCaption})}
+
+
+
+Update the photograph associated to a given coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The name of the coat to be updated\\
+\hline
+{\em new\+Photograph} & The new photograph to be attributed to the coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad4e918d46345d4eb3c4925d08bca6fbf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad4e918d46345d4eb3c4925d08bca6fbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_a0edf8bbbcc09fa1e77b885634cc8b8d4}\label{class_admin_service_a0edf8bbbcc09fa1e77b885634cc8b8d4}} 
+\index{AdminService@{AdminService}!updateCoatPrice@{updateCoatPrice}}
+\index{updateCoatPrice@{updateCoatPrice}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{updateCoatPrice()}{updateCoatPrice()}}
+{\footnotesize\ttfamily void Admin\+Service\+::update\+Coat\+Price (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{new\+Price }\end{DoxyParamCaption})}
+
+
+
+Updates the year a coat has been released 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+{\em new\+Price} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a0edf8bbbcc09fa1e77b885634cc8b8d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a0edf8bbbcc09fa1e77b885634cc8b8d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_ad07405840b2f95c3e75f2dfd27564129}\label{class_admin_service_ad07405840b2f95c3e75f2dfd27564129}} 
+\index{AdminService@{AdminService}!updateCoatQuantity@{updateCoatQuantity}}
+\index{updateCoatQuantity@{updateCoatQuantity}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{updateCoatQuantity()}{updateCoatQuantity()}}
+{\footnotesize\ttfamily void Admin\+Service\+::update\+Coat\+Quantity (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Updates the number of likes a coat has been given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be updated\\
+\hline
+{\em new\+Quantity} & The new quantity to be given to a coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad07405840b2f95c3e75f2dfd27564129_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_ad07405840b2f95c3e75f2dfd27564129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_admin_service_a0e58865293935048893b2ffc38dbfaea}\label{class_admin_service_a0e58865293935048893b2ffc38dbfaea}} 
+\index{AdminService@{AdminService}!updateCoatSize@{updateCoatSize}}
+\index{updateCoatSize@{updateCoatSize}!AdminService@{AdminService}}
+\doxysubsubsection{\texorpdfstring{updateCoatSize()}{updateCoatSize()}}
+{\footnotesize\ttfamily void Admin\+Service\+::update\+Coat\+Size (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Updates the title of a coat from the repository 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be updated\\
+\hline
+{\em new\+Size} & The new size to be given to the coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a0e58865293935048893b2ffc38dbfaea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_admin_service_a0e58865293935048893b2ffc38dbfaea_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_admin_service_8h}{Admin\+Service.\+h}}\item 
+\mbox{\hyperlink{_admin_service_8cpp}{Admin\+Service.\+cpp}}\end{DoxyCompactItemize}

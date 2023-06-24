@@ -1,0 +1,16 @@
+contains(l1...ln, e) = {
+	false, n=0
+	true, l1=e
+	contains(l2...ln, e), otherwise
+}
+
+intersection(a1...an, b1...bm) = {
+	[], n=0
+	a1 + intersection(a2...an, b1...bm), contains(b1...bm, a1) = true
+	intersection(a2..an, b1..bm), otherwise
+}
+
+new_list(m, n) = {
+	[], m=n
+	m + new_list(m + 1, n)
+}

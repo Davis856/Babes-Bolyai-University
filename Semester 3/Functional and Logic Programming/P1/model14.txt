@@ -1,0 +1,26 @@
+my_length(l1...ln) = {
+	0, n=0
+	1 + my_length(l2...ln), otherwise
+}
+
+contains(l1...ln, e) = {
+	false, n=0
+	true, l1=e
+	contains(l2...ln, e), otherwise
+}
+
+remove_occurences(l1...ln, e) = {
+	[], n=0
+	l1 + remove_occurences(l2...ln, e), l1!=e
+	remove_occurences(l2...ln, e), l1=e
+}
+
+set_equal(a1...an, b1...bm) = {
+	true, n=0 and m=0
+	set_equal(remove_occurences(a2...an, b1), remove_occurences(b2...bm, a1)), n=m and contains(a1...an, b1) = true and contains(b1...bm, a1) = true
+}
+
+select_n(l1...ln, n) = {
+	l1, n=1
+	select_n(l2...ln, n-1), otherwise
+}

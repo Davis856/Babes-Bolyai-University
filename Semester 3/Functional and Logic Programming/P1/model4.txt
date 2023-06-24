@@ -1,0 +1,17 @@
+contains(l1...ln, e) = {
+	false, n=0
+	true, l1=e
+	contains(l2...ln, e), otherwise
+}
+
+difference(a1...an, b1...bn) = {
+	[], n=0
+	difference(a2...an, b1...bn), contains(b1...bn, a1) = true
+	a1 + difference(a2...an, b1...bn), otherwise
+}
+
+insert(l1...ln) = {
+	[], n=0
+	l1 + 1 + insert(l2...ln), l1%2=0
+	l1 + insert(l2...ln), l1%2!=0
+}

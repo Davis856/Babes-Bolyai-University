@@ -1,0 +1,16 @@
+insert_div(l1...ln, div, list) = {
+	lsit, n <= 2 or n = div
+	div + insert_div(l2...ln, div+1, list), n%div=0
+	insert_div(l2...ln, div+1, list), otherwise
+}
+
+divizori(l1...ln) = {
+	[], n=0
+	insert_div(l1, 2) + divizori(l2...ln), otherwise
+}
+
+heterList(l1...ln) = {
+	[], n=0
+	divizori(l1) + heterList(l2..ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}

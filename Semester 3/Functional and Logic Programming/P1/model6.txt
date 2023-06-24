@@ -1,0 +1,18 @@
+count_occurences(l1...ln, e) = {
+	0, n=0
+	1 + count_occurences(l2....ln, e), l1=e
+	count_occurences(l2...ln, e), l1!=e
+}
+
+test_set(l1...ln) = {
+	true, n=0
+	false, count_occurences(l1...ln, l1) !=1
+	test_set(l2...ln), otherwise
+}
+
+remove_k_occurences(l1...ln, e, k) = {
+	[], n=0
+	l1...ln, k=0
+	remove_k_occurences(l2...ln, e, k-1), l1 = e
+	l1 + remove_k_occurences(l2...ln, e, k), l1!=e
+}

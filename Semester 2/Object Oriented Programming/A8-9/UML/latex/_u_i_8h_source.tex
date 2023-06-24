@@ -1,0 +1,44 @@
+\hypertarget{_u_i_8h_source}{}\doxysection{UI.\+h}
+\mbox{\hyperlink{_u_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_admin_service_8h}{AdminService.h}}"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_user_service_8h}{UserService.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_u_i}{UI}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{private}:}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_admin_service}{AdminService}}\& adminService;}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_user_service}{UserService}}\& userService;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_u_i_ad08551e20251423e7ebac1d8dd91a669}{UI}}(\mbox{\hyperlink{class_admin_service}{AdminService}}\& adminService, \mbox{\hyperlink{class_user_service}{UserService}}\& userService);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a0b1b50b7903fcd8e041f1c9eaeae2283}{selectMode}}();}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_ac338cd41bacd6cc6a1757a2a9aae9ae3}{mainLoopAdmin}}();}
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a7de445c1dfc682f4131d2a980d8b1be6}{mainLoopUser}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_ad3123be3b84045374e8090d3a9ee82af}{addCoat}}();}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_aef0e41c170483ab89abae9bbefb9084d}{removeCoat}}();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a816fb3980eb7dd528df984a4892d150d}{updateCoat}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a0927ee50231eafb85b68478879add229}{updateCoatSize}}(\textcolor{keywordtype}{int} size, \textcolor{keywordtype}{int} newSize);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_aed314f94b1b8de57a5b8ae3423281def}{updateCoatColour}}(\textcolor{keywordtype}{int} size, std::string newColour);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a1e9146226dfeea1392a445b2d9e6d3bb}{updateCoatPrice}}(\textcolor{keywordtype}{int} size, \textcolor{keywordtype}{int} newPrice);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a029e976f917ee1c43168812c3a59c7fd}{updateCoatQuantity}}(\textcolor{keywordtype}{int} size, \textcolor{keywordtype}{int} newQuantity);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a2e7b15649d3015da9952de72c3dd6e16}{updateCoatPhotograph}}(\textcolor{keywordtype}{int} size, std::string newPhotograph);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_u_i_a1b6923d02a6988d01516ef67dfbc8439}{addCoatToBasket}}(\textcolor{keywordtype}{int} pos);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a92f55d4d4e71f2b4e6c4025d7e4d01b0}{printAllCoats}}();}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a40c54ba1646cd14fecc9bdce562258fb}{printAllCoatsBasket}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a68f855e77f84ac82756db857bb19853f}{printCoatUser}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a3d52f0815f3659ca882191f7cee97845}{printBasketFile}}(std::string fileType);}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a856f614903d67df72666ae34254a674d}{printCoat}}(\textcolor{keywordtype}{int} pos);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_u_i_ab5146e773672a71e49f82f4a42f9468d}{searchCoat}}(\textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a273248e21dc1dd2d9462606536713162}{printAdminMenu}}();}
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_a0d4ccbd9bc87796a6d556669e42ff90e}{printUserMenu}}();}
+\DoxyCodeLine{39 \};}
+
+\end{DoxyCode}

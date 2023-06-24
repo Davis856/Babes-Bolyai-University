@@ -1,0 +1,10 @@
+Size: 1 | Colour: Blue | Price: 50$ | Quantity: 20 | Photograph: https://google.ro
+Size: 5 | Colour: Yellow | Price: 30$ | Quantity: 70 | Photograph: https://google.ro
+Size: 6 | Colour: Green | Price: 80$ | Quantity: 90 | Photograph: https://google.ro
+Size: 3 | Colour: Blue | Price: 10$ | Quantity: 20 | Photograph: https://google.ro
+Size: 4 | Colour: Black | Price: 50$ | Quantity: 60 | Photograph: https://google.ro
+Size: 2 | Colour: White | Price: 30$ | Quantity: 20 | Photograph: https://google.ro
+Size: 8 | Colour: Purple | Price: 60$ | Quantity: 40 | Photograph: https://google.ro
+Size: 10 | Colour: Orange | Price: 80$ | Quantity: 40 | Photograph: https://google.ro
+Size: 7 | Colour: Violet | Price: 20$ | Quantity: 100 | Photograph: https://google.ro
+Size: 12 | Colour: Magenta | Price: 60$ | Quantity: 200 | Photograph: https://google.ro

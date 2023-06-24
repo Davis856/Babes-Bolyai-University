@@ -1,0 +1,153 @@
+\hypertarget{class_user_service}{}\doxysection{User\+Service Class Reference}
+\label{class_user_service}\index{UserService@{UserService}}
+
+
+{\ttfamily \#include $<$User\+Service.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_service_a8752f8d4575ba889635e5e775394aca1}{User\+Service}} (\mbox{\hyperlink{class_basket}{Basket}} $\ast$repo)
+\begin{DoxyCompactList}\small\item\em Constructor for the admin service \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_service_a7f36c5c92d5e0d2bcd0694079664733f}{add\+Coat\+To\+Basket}} (int size, std\+::string colour, int price, int quantity, std\+::string photograph)
+\begin{DoxyCompactList}\small\item\em Adds a new coat to the \mbox{\hyperlink{class_repository}{Repository}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_service_a6011b19d6cf1f198dfcb6d87d85facd1}{update\+Coat\+Quantity}} (int size, int new\+Quantity)
+\begin{DoxyCompactList}\small\item\em Updates the number of likes a coat has been given \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_basket}{Basket}} \mbox{\hyperlink{class_user_service_a3f2a752ec8e389c36aff61f2e9ec171d}{get\+Repo}} () const
+\begin{DoxyCompactList}\small\item\em Prints the content of the repo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_service_afb33ef8a12ac43307cb6c06d867cdd45}{repository\+Type}} (const std\+::string \&file\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_service_a8752f8d4575ba889635e5e775394aca1}\label{class_user_service_a8752f8d4575ba889635e5e775394aca1}} 
+\index{UserService@{UserService}!UserService@{UserService}}
+\index{UserService@{UserService}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{UserService()}{UserService()}}
+{\footnotesize\ttfamily User\+Service\+::\+User\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_basket}{Basket}} $\ast$}]{repo }\end{DoxyParamCaption})}
+
+
+
+Constructor for the admin service 
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo} & The \mbox{\hyperlink{class_repository}{Repository}} on which the class service operates\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_service_a7f36c5c92d5e0d2bcd0694079664733f}\label{class_user_service_a7f36c5c92d5e0d2bcd0694079664733f}} 
+\index{UserService@{UserService}!addCoatToBasket@{addCoatToBasket}}
+\index{addCoatToBasket@{addCoatToBasket}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{addCoatToBasket()}{addCoatToBasket()}}
+{\footnotesize\ttfamily void User\+Service\+::add\+Coat\+To\+Basket (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{std\+::string}]{colour,  }\item[{int}]{price,  }\item[{int}]{quantity,  }\item[{std\+::string}]{photograph }\end{DoxyParamCaption})}
+
+
+
+Adds a new coat to the \mbox{\hyperlink{class_repository}{Repository}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat\\
+\hline
+{\em colour} & The colour of the coat\\
+\hline
+{\em price} & The price of the coat\\
+\hline
+{\em quantity} & The quantity for the coat\\
+\hline
+{\em photograph} & The photograph of the coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_a7f36c5c92d5e0d2bcd0694079664733f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_a7f36c5c92d5e0d2bcd0694079664733f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_user_service_a3f2a752ec8e389c36aff61f2e9ec171d}\label{class_user_service_a3f2a752ec8e389c36aff61f2e9ec171d}} 
+\index{UserService@{UserService}!getRepo@{getRepo}}
+\index{getRepo@{getRepo}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{getRepo()}{getRepo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_basket}{Basket}} User\+Service\+::get\+Repo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints the content of the repo 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_a3f2a752ec8e389c36aff61f2e9ec171d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_user_service_afb33ef8a12ac43307cb6c06d867cdd45}\label{class_user_service_afb33ef8a12ac43307cb6c06d867cdd45}} 
+\index{UserService@{UserService}!repositoryType@{repositoryType}}
+\index{repositoryType@{repositoryType}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{repositoryType()}{repositoryType()}}
+{\footnotesize\ttfamily void User\+Service\+::repository\+Type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Type }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_afb33ef8a12ac43307cb6c06d867cdd45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_user_service_a6011b19d6cf1f198dfcb6d87d85facd1}\label{class_user_service_a6011b19d6cf1f198dfcb6d87d85facd1}} 
+\index{UserService@{UserService}!updateCoatQuantity@{updateCoatQuantity}}
+\index{updateCoatQuantity@{updateCoatQuantity}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{updateCoatQuantity()}{updateCoatQuantity()}}
+{\footnotesize\ttfamily void User\+Service\+::update\+Coat\+Quantity (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Updates the number of likes a coat has been given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be updated\\
+\hline
+{\em new\+Quantity} & The new quantity to be given to a coat\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_a6011b19d6cf1f198dfcb6d87d85facd1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_user_service_a6011b19d6cf1f198dfcb6d87d85facd1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_user_service_8h}{User\+Service.\+h}}\item 
+\mbox{\hyperlink{_user_service_8cpp}{User\+Service.\+cpp}}\end{DoxyCompactItemize}

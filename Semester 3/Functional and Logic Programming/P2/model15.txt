@@ -1,0 +1,13 @@
+predecesor(n, c) = {
+	[], n=0
+	[9], n=1 and l1 = 0
+	[l1 - 1], n=1 and l1!=0
+	9 + predecesor(l2...ln, 1), c=1 and l1=0
+	(l1-c) + predecesor(l2...ln, c), otherwise
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	consecutive(l1, [], []) + heterList(l2...ln), is_list(l1) = True
+	l1 = heterList(l2...ln), otherwise
+}

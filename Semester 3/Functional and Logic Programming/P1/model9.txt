@@ -1,0 +1,15 @@
+insert_value_in_list_on_position(l1...ln, e, p) ={
+	e + l1...ln, p=0
+	l1 + insert_value_in_list_on_position(l2..ln, e, p - 1), otherwise
+}
+
+gcd(a, b) = {
+	a, b=0
+	b, a=0
+	gcd(a%b, b), a>=b
+	gcd(a, b%a), a<b
+}
+gcd_list(l1..ln) = {
+	l1, n=1
+	gcd(l1, gcd_list(l2...ln)), otherwise
+}

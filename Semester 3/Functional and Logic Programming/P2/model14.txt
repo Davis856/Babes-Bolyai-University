@@ -1,0 +1,29 @@
+even(n) = {
+	true, n%2=0
+	false, otherwise
+}
+
+my_append(l1...ln, e) = {
+	[e], n=0
+	l1 + my_append(l2...ln, e), otherwise
+}
+
+my_length(l1...ln) = {
+	0, n=0
+	1 + my_length(l2...ln), otherwise
+}
+
+consecutive(l1...ln, c1...cm, r1...rl) = {
+	r1...rl, n=0, 1>m
+	c1...cm, n=0, 1<m
+	consecutive(l2...ln, c1...cm, l1+r1...r1), even(l1) = true
+	consecutive(l2...ln, r1...r1, []), even(l1) = false and 1 > m
+	consecutive(l2...ln, c1...cm, []), even(l1) = false and 1 < m
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	consecutive(l1, [], []) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}
+ 

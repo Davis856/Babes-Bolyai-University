@@ -1,0 +1,31 @@
+remove_occurences(l1...ln, e) = {
+	[], n=0
+	remove_occurences(l2...ln, e), l1=e
+	l1 + remove_occurences(l2...ln, e), l1 != e
+}
+
+count_occurences(l1...ln, e) = {
+	0, n=0
+	1 + count_occurences(l2...ln, e), l1 = e
+	count_occurences(l2...ln, e), l1 !=e
+}
+
+remove_repetitive(l1...ln) = 
+	[], n=0
+	l1 + remove_repetitive(l2...ln), count_occurences(l1...ln, l1) = 1
+	remove_repetitive(remove_occurences(l1...ln, l1)), count_occurences(l1...ln, l1) != 1
+}
+
+maxim_number(a, b) ={
+	a, a>=b
+	b, b>a
+}
+
+maxim_list(l1...ln) = {
+	l1, n=1
+	maxim_number(l1, maxim_list(l2...ln))
+}
+
+remove_maxim(l1...ln) = {
+	remove_occurences(l1...ln, maxim_list(l1...ln))
+}

@@ -1,0 +1,53 @@
+\hypertarget{_basket_8h_source}{}\doxysection{Basket.\+h}
+\mbox{\hyperlink{_basket_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_coat_8h}{Coat.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_basket}{Basket}} \textcolor{comment}{// User Basket}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{11     vector<Coat> \mbox{\hyperlink{class_basket_a0e2cf9ba5dca3e729f00272480decc85}{basket}};}
+\DoxyCodeLine{12     std::string \mbox{\hyperlink{class_basket_a44c6556e3be8b9865dbb020a6b31af95}{filename}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{comment}{/*}}
+\DoxyCodeLine{18 \textcolor{comment}{        Constructor with parameters.}}
+\DoxyCodeLine{19 \textcolor{comment}{        Initializes an object of type repository, by reading data from the given file.}}
+\DoxyCodeLine{20 \textcolor{comment}{        Throws: FileException -\/ if the file cannot be opened.}}
+\DoxyCodeLine{21 \textcolor{comment}{    */}}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_basket_a5ac51d62ac0a442395de1914abadc498}{Basket}}(\textcolor{keyword}{const} std::string\& \mbox{\hyperlink{class_basket_a44c6556e3be8b9865dbb020a6b31af95}{filename}});}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_basket_a5ac51d62ac0a442395de1914abadc498}{Basket}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basket_a0437091ade41bc5a2650a197318bc188}{addCoatToBasket}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coat}{Coat}}\& coat);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_basket_a8ea474a0b0e5d57382fbf8bda1a04a8c}{updateQuantity}}(\textcolor{keywordtype}{int} position, \textcolor{keywordtype}{int} newQuantity);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_basket_a277bc8ae335dc4724f16be688460ea45}{FindElemBySize}}(\textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_basket_aec3fe43f1207b8e00264ca3cc6e0a7d8}{getSize}}();}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} vector<Coat> \mbox{\hyperlink{class_basket_a9b6ebf7a08c87924c5eecb019a5f0d3b}{getArray}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \textcolor{keyword}{private}:}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} readFromFile();}
+\DoxyCodeLine{51     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} writeToFile();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{keyword}{class }\mbox{\hyperlink{class_user_exception}{UserException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{56 \textcolor{keyword}{private}:}
+\DoxyCodeLine{57     std::string message;}
+\DoxyCodeLine{58 \textcolor{keyword}{public}:}
+\DoxyCodeLine{59     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_user_exception_ad7e743992ffe78462eded736f0f99e9e}{UserException}}(std::string\& \_message);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_user_exception_a585eb27003106a7221c756a5c8532f86}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{62 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+my_length(l1...ln, c) = {
+	c, n=0
+	l1 + my_length(l2...ln, c), otherwise
+}
+
+merge_sort(l1...ln) = {
+	[], n=0
+	[l1], n=1
+	merge(merge_sort(l1...l(n/2)), merge_sort(l(n/2+1)...ln)), otherwise
+}
+
+split(l1...ln, c1...cm) = {
+	return, abs(m-n) <= 1 -> either 0 or 1, else recursive
+	split(l2...ln, l1+c1..cm), n>,
+}
+
+my_append(l1...ln, e) = {
+	[e], n=0
+	l1 + my_append(l2...ln, e), otherwise
+}
+
+my_merge(l1...ln, r1...rm) = {
+	l1...ln, m = 0
+	r1...rn, n = 0
+	l1 + my_merge(l2...ln, r1...rm), l1 <= r1
+	r1 + my_merge(l1...ln, r2...rm), l1 > r1
+}
+
+sort_list(L, R) = merge_sort(L, R)
+
+heterList(l1...ln) = {
+	[], n=0
+	sort_list(l1) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}

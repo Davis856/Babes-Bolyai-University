@@ -1,0 +1,16 @@
+remove_occurences(l1...ln, e) = {
+	[], n=0
+	remove_occurences(l2...ln, e), l1=e
+	l1 + remove_occurences(l2...ln, e), l1 != e
+}
+
+count_occurences(l1...ln, e) = {
+	0, n=0
+	1 + count_occurences(l2...ln, e), l1 = e
+	count_occurences(l2...ln, e), l1 !=e
+}
+
+numberatom(l1...ln) = {
+	[], n=0
+	[l1, count_occurence(l1...ln, l1)] + numberatom(remove_occurence(l2...ln, l1))
+}

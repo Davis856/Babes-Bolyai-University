@@ -1,0 +1,197 @@
+\hypertarget{class_basket}{}\doxysection{Basket Class Reference}
+\label{class_basket}\index{Basket@{Basket}}
+
+
+{\ttfamily \#include $<$Basket.\+h$>$}
+
+
+
+Inheritance diagram for Basket\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_basket__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_basket_ae40f67c302d927c709213a8b76aa29f4}{Basket}} (const std\+::string \&\mbox{\hyperlink{class_basket_a44c6556e3be8b9865dbb020a6b31af95}{filename}})
+\item 
+\mbox{\hyperlink{class_basket_a5ac51d62ac0a442395de1914abadc498}{Basket}} ()
+\item 
+void \mbox{\hyperlink{class_basket_a0437091ade41bc5a2650a197318bc188}{add\+Coat\+To\+Basket}} (const \mbox{\hyperlink{class_coat}{Coat}} \&coat)
+\begin{DoxyCompactList}\small\item\em Adds a new coat to the \mbox{\hyperlink{class_basket}{Basket}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_basket_a8ea474a0b0e5d57382fbf8bda1a04a8c}{update\+Quantity}} (int position, int new\+Quantity)
+\begin{DoxyCompactList}\small\item\em Update the number of likes of a coat \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_basket_a277bc8ae335dc4724f16be688460ea45}{Find\+Elem\+By\+Size}} (int size)
+\begin{DoxyCompactList}\small\item\em Find the position of the element which we want to search for \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_basket_aec3fe43f1207b8e00264ca3cc6e0a7d8}{get\+Size}} ()
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_coat}{Coat}} $>$ \mbox{\hyperlink{class_basket_a9b6ebf7a08c87924c5eecb019a5f0d3b}{get\+Array}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_coat}{Coat}} $>$ \mbox{\hyperlink{class_basket_a0e2cf9ba5dca3e729f00272480decc85}{basket}}
+\item 
+std\+::string \mbox{\hyperlink{class_basket_a44c6556e3be8b9865dbb020a6b31af95}{filename}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_basket_ae40f67c302d927c709213a8b76aa29f4}\label{class_basket_ae40f67c302d927c709213a8b76aa29f4}} 
+\index{Basket@{Basket}!Basket@{Basket}}
+\index{Basket@{Basket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{Basket()}{Basket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Basket\+::\+Basket (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_basket_a5ac51d62ac0a442395de1914abadc498}\label{class_basket_a5ac51d62ac0a442395de1914abadc498}} 
+\index{Basket@{Basket}!Basket@{Basket}}
+\index{Basket@{Basket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{Basket()}{Basket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Basket\+::\+Basket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_basket_a0437091ade41bc5a2650a197318bc188}\label{class_basket_a0437091ade41bc5a2650a197318bc188}} 
+\index{Basket@{Basket}!addCoatToBasket@{addCoatToBasket}}
+\index{addCoatToBasket@{addCoatToBasket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{addCoatToBasket()}{addCoatToBasket()}}
+{\footnotesize\ttfamily void Basket\+::add\+Coat\+To\+Basket (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_coat}{Coat}} \&}]{coat }\end{DoxyParamCaption})}
+
+
+
+Adds a new coat to the \mbox{\hyperlink{class_basket}{Basket}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coat} & The coat to be added\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_basket_a0437091ade41bc5a2650a197318bc188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_basket_a277bc8ae335dc4724f16be688460ea45}\label{class_basket_a277bc8ae335dc4724f16be688460ea45}} 
+\index{Basket@{Basket}!FindElemBySize@{FindElemBySize}}
+\index{FindElemBySize@{FindElemBySize}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{FindElemBySize()}{FindElemBySize()}}
+{\footnotesize\ttfamily int Basket\+::\+Find\+Elem\+By\+Size (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Find the position of the element which we want to search for 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the coat to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position of the coat
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_basket_a277bc8ae335dc4724f16be688460ea45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_basket_a277bc8ae335dc4724f16be688460ea45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_basket_a9b6ebf7a08c87924c5eecb019a5f0d3b}\label{class_basket_a9b6ebf7a08c87924c5eecb019a5f0d3b}} 
+\index{Basket@{Basket}!getArray@{getArray}}
+\index{getArray@{getArray}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{getArray()}{getArray()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_coat}{Coat}} $>$ Basket\+::get\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_s_v_basket_aba11071b08d9d8d0fae6a966c6984c1a}{CSVBasket}}, and \mbox{\hyperlink{class_h_t_m_l_basket_a3facae9185a88329678f881ad12f6bb7}{HTMLBasket}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_basket_a9b6ebf7a08c87924c5eecb019a5f0d3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_basket_aec3fe43f1207b8e00264ca3cc6e0a7d8}\label{class_basket_aec3fe43f1207b8e00264ca3cc6e0a7d8}} 
+\index{Basket@{Basket}!getSize@{getSize}}
+\index{getSize@{getSize}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Basket\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_s_v_basket_a64c437aa37924da72a8649b9b339cffa}{CSVBasket}}, and \mbox{\hyperlink{class_h_t_m_l_basket_ae331e25c0aae990c3b4b29f392134dde}{HTMLBasket}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_basket_aec3fe43f1207b8e00264ca3cc6e0a7d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_basket_a8ea474a0b0e5d57382fbf8bda1a04a8c}\label{class_basket_a8ea474a0b0e5d57382fbf8bda1a04a8c}} 
+\index{Basket@{Basket}!updateQuantity@{updateQuantity}}
+\index{updateQuantity@{updateQuantity}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{updateQuantity()}{updateQuantity()}}
+{\footnotesize\ttfamily void Basket\+::update\+Quantity (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{new\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Update the number of likes of a coat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The postition of the coat to be updated\\
+\hline
+{\em new\+Quantity} & The new quantity to be given the coat\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_basket_a8ea474a0b0e5d57382fbf8bda1a04a8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_basket_a0e2cf9ba5dca3e729f00272480decc85}\label{class_basket_a0e2cf9ba5dca3e729f00272480decc85}} 
+\index{Basket@{Basket}!basket@{basket}}
+\index{basket@{basket}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{basket}{basket}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_coat}{Coat}}$>$ Basket\+::basket\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_basket_a44c6556e3be8b9865dbb020a6b31af95}\label{class_basket_a44c6556e3be8b9865dbb020a6b31af95}} 
+\index{Basket@{Basket}!filename@{filename}}
+\index{filename@{filename}!Basket@{Basket}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily std\+::string Basket\+::filename\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_basket_8h}{Basket.\+h}}\item 
+\mbox{\hyperlink{_basket_8cpp}{Basket.\+cpp}}\end{DoxyCompactItemize}

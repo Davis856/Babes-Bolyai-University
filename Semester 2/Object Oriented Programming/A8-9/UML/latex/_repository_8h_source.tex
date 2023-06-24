@@ -1,0 +1,60 @@
+\hypertarget{_repository_8h_source}{}\doxysection{Repository.\+h}
+\mbox{\hyperlink{_repository_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_coat_8h}{Coat.h}}"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_repository}{Repository}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     vector<Coat> Coats;}
+\DoxyCodeLine{11     std::string filename;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{comment}{/*}}
+\DoxyCodeLine{16 \textcolor{comment}{        Constructor with parameters.}}
+\DoxyCodeLine{17 \textcolor{comment}{        Initializes an object of type repository, by reading data from the given file.}}
+\DoxyCodeLine{18 \textcolor{comment}{        Throws: FileException -\/ if the file cannot be opened.}}
+\DoxyCodeLine{19 \textcolor{comment}{    */}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_repository_a908475219d0aaa07501e0fc62ab25ef9}{Repository}}(\textcolor{keyword}{const} std::string\& filename);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_aa14b72c76601ce059447edc519cd5950}{addCoat}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coat}{Coat}}\& coat);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_a792989df4849a33f387e1d1d49a1b603}{removeCoat}}(\textcolor{keywordtype}{int} position);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_a2d6fbd8f84500adf2a22286fe38764be}{updateSize}}(\textcolor{keywordtype}{int} position, \textcolor{keywordtype}{int} newSize);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_afe5d2d60ed0994db7c45d5a323226b55}{updateColour}}(\textcolor{keywordtype}{int} position, std::string newColour);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_a6d2ce54c0d4fa0c69053f6fe7bd7368e}{updatePrice}}(\textcolor{keywordtype}{int} position, \textcolor{keywordtype}{int} newPrice);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_a80d5251e0c2b9628e418ec7bfe6bf84c}{updateQuantity}}(\textcolor{keywordtype}{int} position, \textcolor{keywordtype}{int} newQuantity);}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_repository_acc07ffafbee2dbae2f653046f3984a5c}{updatePhotograph}}(\textcolor{keywordtype}{int} position, std::string newPhotograph);}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_repository_a1ded08b479e7f869d2b557ab70167264}{FindElemBySize}}(\textcolor{keywordtype}{int} size) \textcolor{keyword}{const};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_repository_afbc6c545c6c0dfa38c807c80d6f413a9}{getSize}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{77     vector<Coat> \mbox{\hyperlink{class_repository_a7aec2f55255943c21fc341170aef327c}{getArray}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 \textcolor{keyword}{private}:}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} readFromFile();}
+\DoxyCodeLine{82     \textcolor{keywordtype}{void} writeToFile();}
+\DoxyCodeLine{83 \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{class }\mbox{\hyperlink{class_repository_exception}{RepositoryException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{87 \textcolor{keyword}{private}:}
+\DoxyCodeLine{88     std::string message;}
+\DoxyCodeLine{89 \textcolor{keyword}{public}:}
+\DoxyCodeLine{90     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_repository_exception_ac4c150459f90af75e7d6dc8ab0de6a0a}{RepositoryException}}(std::string\& \_message);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_repository_exception_a509f1bd2c3dd9f1f8537e7c22a8aeb5f}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{93 \};}
+
+\end{DoxyCode}

@@ -1,0 +1,13 @@
+my_merge(l1...ln, r1...rm) = {
+	l1...ln, m=0
+	r1...rm, n=0
+	l1 + my_merge(l2...ln, r1...rm), l1 < r1
+	r1 + my_merge(l1...ln, r2...rm), l1 > r1
+	my_merge(l1...ln, r2...rm), l1=r1
+}
+
+heterList(l1...ln) = {
+	[], n=0
+	merge(l1, heterList(l2...ln)), is_list(l1) = True
+	heterList(l2...ln), otherwise
+}

@@ -1,0 +1,36 @@
+my_append(l1...ln, e) = {
+	e, n=0
+	l1 + my_append(l2...ln, e), otherwise
+}
+
+my_length(l1...ln) = {
+	0, n=0
+	1 + my_length(l2...ln), otherwise
+}
+
+inv_list(l1...ln) = {
+	[], n=0
+	my_append(inv_list(l2...ln), l1), otherwise
+}
+
+sum_lists(a1...an, b1...bm) = {
+	a1...an, m=0
+	b1...bm, n=0
+	inv_list(suma(inv_list(a1...an), inv_list(b1...bm), 0)), n <= m
+	inv_list(suma(inv_list(b1...bm), inv_list(a1...an), 0)), otherwise
+}
+
+suma(a1...an, b1...bm, c) = {
+	[], n=0 and m=0 and c=0
+	[1], n=0 and m=0 and c=1
+	(b1 + c) + suma([], b2...bm, 0), n=0 and b1 + c < 10
+	((b1+c)%10) + suma([],b2...bm, 1), n=0 and b1+c>10
+	(a1+b1+c) + suma(a2...an, b2...bm, 0), a1+b1+c<10
+	((a1+b1+c)%10)+suma(a2...an, b2...bm, 1), a1+b1+c>10
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	replace_pos(l1, succesor(l1), 1) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+} 

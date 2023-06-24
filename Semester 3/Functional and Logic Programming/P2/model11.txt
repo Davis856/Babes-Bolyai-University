@@ -1,0 +1,22 @@
+replaceEl(l1...ln, e1, e2) = {
+	[], n=0
+	e2 + replaceEl(l2...ln, e1, e2), l1 = e1
+	l1 + replaceEl(l2...ln, e1, e2), otherwise
+}
+
+maxim_number(a, b) = {
+	a, a >= b
+	b, a < b
+}
+
+maxim_list(l1...ln) = {
+	l1, n=1
+	maxim_number(l1, maxim_list(l2...ln)), number(l1) = True
+	maxim_list(l2...ln), otherwise
+}
+
+heterList(l1...ln, m) = {
+	[], n=0
+	replaceEl(l1, m, maxim_list(l1)) + heterList(l2...ln, m), is_list(l1) = True
+	l1 + heterList(l2...ln, m), otherwise
+}

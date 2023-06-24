@@ -1,0 +1,14 @@
+remConsecutive(l1...ln) = {
+	l1...ln, n <= 1
+	[], n= 2 and l2 = l1+1
+	remConsecutive(l2...ln), l2 = l1 + 1 and l3 = l2 + 1
+	remConsecutive(l3...ln), l2 = l1 + 1 and l3 != 12 + 1
+	l1 + remConsecutiev(l2...ln), l2 != l1+1
+}
+
+heterList(l1...ln) = {
+	[], n=0
+	remConsecutive(l1) + heterList(l2...ln), is_list(l1) = True
+	l1 + heterList(l2...ln), otherwise
+}
+

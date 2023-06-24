@@ -1,0 +1,13 @@
+valley(l1...ln, f) = {
+	true, n = 1 and f = 0
+	valley(l2...ln, 0), l1 < l2
+	valley(l2...ln, 1), l1 > l2
+	false, otherwise
+}
+
+alternative_sum(l1...ln) = {
+	0, n=0
+	l1, n=1
+	l1 - l2 + alternative_sum(l3...ln), otherwise
+}
+

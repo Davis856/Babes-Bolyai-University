@@ -1,0 +1,27 @@
+\hypertarget{_validator_8h_source}{}\doxysection{Validator.\+h}
+\mbox{\hyperlink{_validator_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_coat_8h}{Coat.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{class }\mbox{\hyperlink{class_validator}{Validator}}}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6 \textcolor{keyword}{public}:}
+\DoxyCodeLine{7     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_a0f127e0be101fef296f1786a88282260}{validateString}}(std::string\& input);}
+\DoxyCodeLine{8     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_ab5902ac8ae47ad7df4df273f8bb91c92}{validCoatSize}}(\textcolor{keywordtype}{size\_t} size);}
+\DoxyCodeLine{9     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_a3557f6174ee81609d89a017d44c177b7}{validCoatColour}}(std::string colour);}
+\DoxyCodeLine{10     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_a25859064d5d19f21d1fcf429f7efbde0}{validCoatPrice}}(\textcolor{keywordtype}{size\_t} price);}
+\DoxyCodeLine{11     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_a720573a2343987d08d8a6df3c6dc3a0a}{validCoatQuantity}}(\textcolor{keywordtype}{size\_t} quantity);}
+\DoxyCodeLine{12     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_validator_a6e945b6748c34680a69675ee81751082}{validCoatPhotograph}}(std::string photograph);}
+\DoxyCodeLine{13 \};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_validation_exception}{ValidationException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     std::string message;}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_validation_exception_a7ef916e3afbea5de5e4f59dc421f3a7f}{ValidationException}}(std::string\& \_message);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_validation_exception_ac8d17b7aa9ceb4b497672e8eaec844f3}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{22 \};}
+
+\end{DoxyCode}

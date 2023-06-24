@@ -1,0 +1,22 @@
+remove_occurences(l1...ln, e) = {
+    [], n = 0
+    l1 + remove_occurences(l2...ln, e), l1 != e
+    remove_occurences(l2...ln, e), l1 = e
+}
+
+union(a1...an, b1...bm) = {
+ 	[], n = 0 and m = 0
+ 	a1 + union(remove_occurences(a1...an, a1), remove_occurences(b1...bm, a1)), n > 0
+ 	union(b1...bm, []), n = 0
+}
+
+sets(l1...ln, k) = {
+ 	[], k = 0
+ 	l1 + sets(l2...ln, k - 1), k > 0
+ 	sets(l2...ln, k), k > 0
+}
+
+gen_sets(l1..ln) = {
+ 	[], n = 0
+ 	findall(sets(l1...ln, 2))
+}

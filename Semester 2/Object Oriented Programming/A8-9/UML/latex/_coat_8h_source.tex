@@ -1,0 +1,50 @@
+\hypertarget{_coat_8h_source}{}\doxysection{Coat.\+h}
+\mbox{\hyperlink{_coat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_coat}{Coat}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{string} colour;}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} price;}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} quantity;}
+\DoxyCodeLine{14     \textcolor{keywordtype}{string} photograph;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{comment}{//constructor for Coats}}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_coat_ab6433ae16d043a14e8a82758366ec2b0}{Coat}}() : size\{ 0 \}, colour\{ \textcolor{stringliteral}{"{}"{}} \}, price\{ 0 \}, quantity\{ 0 \}, photograph\{ \textcolor{stringliteral}{"{}"{}} \} \{\};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{28     \mbox{\hyperlink{class_coat_a847ea115dcbe3ea355e8d5d4329ba644}{Coat}}(\textcolor{keywordtype}{int} size, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& colour, \textcolor{keywordtype}{int} price, \textcolor{keywordtype}{int} quantity, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& photograph);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     \mbox{\hyperlink{class_coat_a0fda39e1ac5562e1412709decbc1d2e1}{\string~Coat}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_coat_a9fb2a4896a7a30e6933a077d2a38a4bb}{getSize}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>size; \}}
+\DoxyCodeLine{37     \textcolor{keyword}{inline} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_coat_a981bdd6236425fe2930a9979f972f6c3}{getColour}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>colour; \}}
+\DoxyCodeLine{38     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_coat_a6fba8824246915d9963528d97f9edb73}{getPrice}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>price; \}}
+\DoxyCodeLine{39     \textcolor{keyword}{inline} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_coat_aeaa2615b37789f442b8f8250511fcde4}{getQuantity}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>quantity; \}}
+\DoxyCodeLine{40     \textcolor{keyword}{inline} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_coat_a03f2f549a7244ec2d3e97bde9cb17fa8}{getPhotograph}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} this-\/>photograph; \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_afa6fd95770e591e0fbe2a736c94fd088}{setSize}}(\textcolor{keywordtype}{int} value) \{ this-\/>size = value; \}}
+\DoxyCodeLine{43     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_ace8f2c791fcd711df41830a1fd83b25c}{setColour}}(\textcolor{keywordtype}{string} value) \{ this-\/>colour = value; \}}
+\DoxyCodeLine{44     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_afbe2e0fa49842a2e3e5b090c67a9d27d}{setPrice}}(\textcolor{keywordtype}{int} value) \{ this-\/>price = value; \}}
+\DoxyCodeLine{45     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_ad90397a51b6cb82ae1769a08e246c0be}{setQuantity}}(\textcolor{keywordtype}{int} value) \{ this-\/>quantity = value; \}}
+\DoxyCodeLine{46     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_a067a58fbc129831d8dca25a3095b3d49}{setPhotograph}}(\textcolor{keywordtype}{string} value) \{ this-\/>photograph = value; \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_coat_adbc7dca8efedd43d3c1185cbdfe16e58}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_coat}{Coat}}\& other) \textcolor{keyword}{const};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keyword}{friend} std::ostream\& \mbox{\hyperlink{class_coat_a761509659b08360aea73851707411b0d}{operator<<}}(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_coat}{Coat}}\& coat);}
+\DoxyCodeLine{63     \textcolor{keyword}{friend} std::istream\& \mbox{\hyperlink{class_coat_aaa26fee5f11659bd4805ce8c6d4fb7d5}{operator>>}}(std::istream\& is, \mbox{\hyperlink{class_coat}{Coat}}\& coat);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_coat_ace21591c43c95ab4cf2fa028a83b8758}{click}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \};}
+
+\end{DoxyCode}

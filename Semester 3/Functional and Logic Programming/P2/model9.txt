@@ -1,0 +1,11 @@
+insert_list(l1...ln, e, pos) = {
+	[], n=0
+	l1 + e + insert_pos(l2...ln, e, pos + 1), pos %2 = 1
+	l1 + insert_pos(l2...ln, e, pos+1), otherwise
+}
+
+heterList(l1...ln, list) = {
+	[], n=0
+	l1 + insertNb(l2, l1) + heterList(l2...ln), is_list(l2) = True and number(l1)
+	l1 + heterList(l2...ln), otherwise
+}
