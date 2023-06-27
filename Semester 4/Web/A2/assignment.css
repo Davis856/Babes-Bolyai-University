@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.first-gradient{
+    background-image:linear-gradient(rgba(255,0,0,1), rgba(255,0,0,0));
+    height:475px;
+}
+
+.second-gradient{
+    background-image:linear-gradient(rgba(255,0,0,0), rgba(0,0,255,1));
+    height:475px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move-square 5s linear forwards, color-change 5s linear forwards;
+  }
+  
+  @keyframes move-square {
+    from {
+      top: 0;
+      left: 0;
+    }
+    to {
+      top: calc(100vh - 50px);
+      left: calc(100vw - 50px);
+    }
+  }
+  
+  @keyframes color-change {
+    from {
+      background-color: blue;
+    }
+    to {
+      background-color: red;
+    }
+  }

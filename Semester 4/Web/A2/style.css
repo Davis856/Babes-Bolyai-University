@@ -1,0 +1,128 @@
+.a{
+    list-style-type:lower-greek;
+    color:white;
+}
+
+.b{
+    list-style-type:upper-latin;
+    color:white;
+}
+
+.zindex{
+    z-index: -1;
+    position:absolute;
+    left:0px;
+    top:0px;
+    opacity:0.5;
+    border-radius:50px 50px 50px 50px;
+}
+
+.sidebar{
+    display:block;
+    list-style-type:none;
+}
+
+.sidebar-item{
+    color:white;
+}
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: royalblue;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#example1 {
+    border: 10px dashed black;
+    padding: 25px;
+    background: url(images/138728.jpg);
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+.grad{
+    background-image:linear-gradient(blue, orange);
+}
+
+.grad2{
+    background-image:linear-gradient(darkblue, blue, rgb(21, 73, 230), blue, darkblue);
+}
+
+.shadows h2{
+    text-shadow:0 0 3px black;
+}
+
+.shadows h3{
+    box-shadow: 0 0 3px black;
+}
+
+.transform{
+    background-color:blue;
+    width:25%;
+    transform: translate(50px, 150px);
+}
+
+.transform2{
+    background-color:yellow;
+    width:25%;
+    transform: rotate(45deg);
+}
+
+.transform3{
+    background-color:red;
+    width:25%;
+    transform:rotateZ(150deg);
+}
+
+.transform4{
+    background-color:green;
+    width:150px;
+    transition: width 2s;
+    margin-top:500px;
+}
+
+.transform4:hover{
+    width:300px;
+}
+
+
+.transform5{
+    width:100px;
+    height:100px;
+    background-color:red;
+    position:relative;
+    animation-name:transform5;
+    animation-duration:4s;
+}
+@keyframes transform5{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
